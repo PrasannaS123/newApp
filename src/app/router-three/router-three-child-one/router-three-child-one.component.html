@@ -1,0 +1,16 @@
+<div class="container" [routerLink]="['/router-three' , 45,'enter']">
+    <h6>IPL TeamName:</h6>
+    <input type="text" name="team" id="team" class="form-control" [(ngModel)]="teamName">
+    <br>
+    <h6>Captain Name:</h6>
+    <input type="text" name="team" id="team" class="form-control" [(ngModel)]="teamCaptainName">
+    <br>
+    <button class="btn btn-primary" (click)="register()">Registration IPLTeams</button>
+</div>
+<div class="container">
+    <p *ngIf="score">High SCORE: 90</p>
+</div>
+<div  class=" container my-2">
+   <p *ngIf="tname">TeamName is {{teamName}} Team CaptainName is {{teamCaptainName}}</p>
+   <button *ngIf="btn" (click) = "showDetails()" class="btn btn-primary" >HighScore</button>
+</div>

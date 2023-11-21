@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Laptop</a>
+        <div class="icon" appNavbar #r1 = 'appNavbar'>
+            <button class="navbar-toggler" type="button" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" [ngClass]="{'show' : r1.isnavbar}" >
+            <div class="navbar-nav ">
+                <a class="nav-item active nav-link"  (click)="OnSelect('laptop')">Laptop </a>
+                <a class="nav-item  nav-link" href="#" (click)="OnSelect('keyboard')">Keyboard </a>
+                <a class="nav-item  nav-link" href="#">Details </a>
+                <a class="nav-item  nav-link" href="#">About </a>
+                <a class="nav-item  nav-link" href="#">Login </a>
+
+
+                <div class="dropdown" appDropDown #r = 'appDropDown'>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown">
+                        Laptop
+                    </button>
+                    <div class="dropdown-menu" [ngClass]="{'show':r.isOpen}">
+                        <a class="dropdown-item" href="#">LaptopPriceDetails</a>
+                        <a class="dropdown-item" href="#">KeyboardPriceDetails</a>
+                        <a class="dropdown-item" href="#">ShowBothPriceDeatils</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,13 @@
+<ul class="list-group" *ngFor="let item of items1">
+    <a href="#" class="text-decoration-none" [routerLink]="['/router-three',15,'edit']"
+        [queryParams]="{allowUserEdit: '5'}" [fragment]="'loading'">
+        <li class="list-group-item">
+            {{item}}
+        </li>
+        
+
+
+        
+
+    </a>
+</ul>

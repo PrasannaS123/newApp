@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="col-lg-12">
+        <button class="btn btn-primary my-2" >Laptop List</button>
+    </div>
+</div>
+<app-laptop-item *ngFor="let item of laptops" [laptopItems]="item"
+    (someLaptopItems)="onLaptopSelectedItems(item)"></app-laptop-item>

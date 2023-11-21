@@ -1,0 +1,21 @@
+<div class="container" style="font-family: sans-serif;">
+    <div class="row">
+        <div class="col-12">
+            <h4>Laptop Details</h4>
+            <h5 [ngClass]="{text: element.laptopDetails}" >1.{{element.laptopDetails}}</h5>
+            <p [ngClass]="{text1: element.laptopContent}">{{element.laptopContent}}</p>
+
+            <button class="btn btn-success mb-2" (click)="buttonClick()">Read More</button>
+            
+            <ul class="list-group">
+                <h6 [ngStyle]="{color: 'purple'}">{{element.laptopFeatures}}</h6>
+                <li class="list-group-item">{{element.laptopList1}}</li>
+                <li class="list-group-item">{{element.laptopList2}}</li>
+                <li class="list-group-item">{{element.laptopList3}}</li>
+                <li class="list-group-item">{{element.laptopList4}}</li>
+            </ul>
+          
+          
+        </div>
+    </div>
+</div>

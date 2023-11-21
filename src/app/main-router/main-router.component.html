@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-12 my-3">
+            <h5>Routing Content: </h5>
+           
+            <ul class="nav nav-pills my-3">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">RouterOne</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/router-two" routerLinkActive="active" >RouterTwo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['router-three']" routerLinkActive="active" >RouterThree</a>
+                </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <!-- <app-router-one></app-router-one> -->
+    <router-outlet></router-outlet>
+</div>
+<!-- <div>
+    <app-router-two></app-router-two>
+</div>
+<div>
+    <app-router-three></app-router-three>
+</div> -->

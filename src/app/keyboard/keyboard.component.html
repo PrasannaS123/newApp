@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <app-keyboard-edit></app-keyboard-edit>
+            <!-- (keyboardAdded)="OnKeyboard($event) -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-primary my-2">Keyboard Prices</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group my-3">
+                <li class="list-group-item" *ngFor="let keys of keyboards">
+                    {{keys.name}} - Price:(Rs.{{ keys.amount}})
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

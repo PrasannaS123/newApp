@@ -1,0 +1,16 @@
+<div class="row p-2">
+    <div class="col-12">
+        <p ngClass="{textColor: title1}">{{title1}}</p>
+        <form action="#">
+            <label for="name" class="form-label">CustomerName</label>
+            <input type="text" id="name" name="name" class="form-control" (ngModel)="name">
+
+            <label for="name" class="form-label mt-2">CustomerAddress</label>
+            <input type="text" id="title" name="title" class="form-control" (ngModel)="title">
+        </form>
+        <div class="mt-2">
+            <button class="btn btn-primary mx-1" (click)="NameTitleShow()">Add Name and Address</button>
+        </div>
+        <!-- <p>my name is {{name1}}</p> -->
+    </div>
+</div>

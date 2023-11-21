@@ -1,0 +1,11 @@
+<app-child
+    [justElement]="{ laptopDetails: 'Apple Laptop', laptopContent: 'The 14-inch MacBook Pro equipped with the M2 Pro or M2 Max chip is the best choice for class assignments that require a lot of power. Apples 2023 update boosted performance for this model, making it ideal for students working on demanding projects like video editing. The M2 Pro offers impressive speed, memory, and graphics power with options for a 10-core or 12-core CPU and a 16-core or 19-core GPU. It features a Unified Memory system that reduces data duplication and a 16-core Neural Engine thats 40% faster than the previous M1 version.For ultimate performance, the M2 Max models support up to 64GB of RAM, 400GB/s memory bandwidth, and options for a 10-core or 12-core CPU and a 16-core or 32-core GPU.', laptopList1: 'Blistering fast performance', laptopList2: 'Vibrant mini-LED display', laptopList3: 'Faster Wi-Fi 6E',laptopList4: 'Up to 19 hours battery life',laptopFeatures: 'Apple Laptop Features:' }"
+    (textShowing)="showText()">
+</app-child>
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-2">
+            <p *ngIf="text">{{text}}</p>
+        </div>
+    </div>
+</div>

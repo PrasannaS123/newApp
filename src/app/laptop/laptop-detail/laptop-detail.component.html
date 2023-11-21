@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-primary my-2">Laptop Details</button>
+    </div>
+</div>
+<div class="row border my-2" *ngFor="let items of laptopsDetails">
+    
+    <div class="col-12">
+        <img [src]="items.imagePath" class="img-fluid" style="width: 50px;">
+        <br>
+        <h4>{{items.features}}</h4>
+        <p>{{items.core}}</p>
+        <p>{{items.tone}}</p>
+        <p>{{items.port}}</p>
+        <p>{{items.keyboard}}</p>
+        <p>{{items.price}}</p>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let keys of ">
+
+                </li>
+                <li class="list-group-item">
+
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>

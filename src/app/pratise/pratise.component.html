@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-12">
+            <button class="btn btn-primary" (click)=" number = !number">Click</button>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12">
+            <ul class="list-group my-3">
+                <div *appExtraD="number">
+                    <li class="list-group-item" *ngFor="let odd of oddNum" [ngClass]="{color: odd}">
+                        {{odd}}
+                    </li>
+                </div>
+                <div *appExtraD="!number">
+                    <li class="list-group-item" *ngFor="let even of evenNum" [ngClass]="{color1: even}">
+                        {{even}}
+                    </li>
+                </div>
+                <p class="my-2 p-2" appHighlight>Welcome to the world of Mark antony mamey!</p>
+                <p class="my-2 p-2" appBetterHighlight>Welcome to the world of Mark antony mamey!</p>
+                <div [ngSwitch]="value">
+                    <p *ngSwitchCase="5">Value is 5</p>
+                    <p *ngSwitchCase="10">Value is 10</p>
+                    <p *ngSwitchCase="100">Value is 100</p>
+                    <p *ngSwitchCase="500">Value is 500</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
